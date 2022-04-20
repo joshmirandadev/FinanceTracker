@@ -1,6 +1,8 @@
-import Expenses from "./components/Expenses";
+import React from "react";
 
-function App() {
+import Expenses from "./components/Expenses/Expenses";
+
+const App = () => {
   const expenses = [
     {
       id: "e1",
@@ -31,6 +33,6 @@ function App() {
       {/* we are calling the import by these tags, this is the function from the file, uppercase is defined by the developer */}
     </div>
   );
-}
+};
 
 export default App;
