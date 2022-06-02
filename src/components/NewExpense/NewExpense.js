@@ -5,6 +5,7 @@ import ExpenseForm from "./ExpenseForm";
 const NewExpense = (props) => {
   const saveExpenseDataHandler = (enteredExpenseData) => {
     const expenseData = {
+      //copy in the entered expense data, we generate this in the object in submit handler
       ...enteredExpenseData,
       id: Math.random().toString(),
     };
